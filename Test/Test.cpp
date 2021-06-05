@@ -13,8 +13,22 @@ int main()
     auto add = Add(numA, numB);
     auto devide = Devide(add, varY);
     auto sqr = Sqrt(numC);
+    auto root = Root(numC, numB);
+    auto pow = Pow(numA, numB);
+    auto multiply = Multiply(numA, numB);
 
     MathSystem<float> ms({ { "x", devide },{ "y", sqr } });
+    std::cout << root.Calculate() << std::endl;
+    std::cout << pow.Calculate() << std::endl;
+    std::cout << multiply.Calculate() << std::endl;
     std::cout << sqr.Calculate() << std::endl;
     std::cout << ms.Calculate("x") << std::endl;
+    try
+    {
+        std::cout << devide.Calculate() << std::endl;
+    }
+    catch (const PMathBadExpression& e)
+    {
+        std::cout << e.what() << std::endl;
+    }
 }

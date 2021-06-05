@@ -20,23 +20,17 @@ public:
 	Var(std::string FunctionName) : FunctionName(FunctionName) {}
 	T Calculate(const std::optional<MathSystem<T>>& ms = std::nullopt) const override
 	{
-		/*const std::vector<MathFunction<T>>& funs = ms->GetFunctions();
-		for (int i = 0; i < funs.size(); i++)
+		if (ms)
 		{
-			if (funs[i].GetName() == FunctionName)
+			for (const MathFunction<T>& fun : ms->Functions)
 			{
-				return funs[i].Calculate(ms);
-			}
-		}*/
-		
-		for (const MathFunction<T>& fun : ms->Functions)
-		{
-			if (fun.GetName() == FunctionName)
-			{
-				return fun.Calculate(ms);
+				if (fun.GetName() == FunctionName)
+				{
+					return fun.Calculate(ms);
+				}
 			}
 		}
-		throw -1;
+		throw PMathBadExpression("Error Var: Unknown variable " + FunctionName);
 	}
 	std::string FunctionName;
 };

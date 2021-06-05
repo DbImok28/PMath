@@ -161,6 +161,7 @@
     <ClInclude Include="MathFunction.hpp" />
     <ClInclude Include="MathSystem.hpp" />
     <ClInclude Include="PMath.hpp" />
+    <ClInclude Include="PMathException.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MathEpressions.cpp" />
@@ -168,6 +169,7 @@
     <ClCompile Include="MathFunction.cpp" />
     <ClCompile Include="MathSystem.cpp" />
     <ClCompile Include="PMath.cpp" />
+    <ClCompile Include="PMathException.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

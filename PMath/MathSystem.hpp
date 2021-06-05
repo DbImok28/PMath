@@ -24,7 +24,7 @@ public:
 				return fun.Calculate(*this);
 			}
 		}
-		throw -1;
+		throw PMathBadExpression("Error MathSystem: Unknown variable " + FunctionName);;
 		// error
 	}/*
 	const std::vector<MathFunction<T>&>& GetFunctions() const noexcept
