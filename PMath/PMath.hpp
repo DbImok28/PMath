@@ -1,16 +1,18 @@
 #pragma once
 
-class PMathBadExpression;
+namespace PMath
+{
+	class PMathBadExpression;
 
-template<class T>
-class MathSystem;
+	template<class T>
+	class MathSystem;
 
-template<class T>
-class MathFunction;
+	template<class T>
+	class MathFunction;
 
-template<class T>
-class MathExpression;
-
+	template<class T>
+	class MathExpression;
+}
 
 #include <vector>
 #include <optional>
@@ -18,7 +20,7 @@ class MathExpression;
 #include <string_view>
 
 #include "PMathException.hpp"
-#include "MathSystem.hpp"
-#include "MathExpression.hpp"
-#include "MathFunction.hpp"
-#include "MathEpressions.hpp"
+#include "PMathSystem.hpp"
+#include "PMathExpression.hpp"
+#include "PMathFunction.hpp"
+#include "PMathEpressions.hpp"

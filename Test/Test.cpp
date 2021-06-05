@@ -2,6 +2,7 @@
 #include <optional>
 #include "PMath.hpp"
 
+using namespace PMath;
 int main()
 {
     //MathSystem<float> ms({ { "x", Devide(Add(Num(2.f),Num(3.f)),Var<float>("y")) }, { "y",  Sqrt(Num(5.f)) } });
