@@ -14,6 +14,7 @@ namespace PMath
 	class MathExpression;
 }
 
+#include <cmath>
 #include <vector>
 #include <optional>
 #include <string>
@@ -23,4 +24,5 @@ namespace PMath
 #include "PMathSystem.hpp"
 #include "PMathExpression.hpp"
 #include "PMathFunction.hpp"
-#include "PMathEpressions.hpp"
+#include "PMathBaseExpressions.hpp"
+#include "PMathTrigonometricExpressions.h"

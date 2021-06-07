@@ -155,13 +155,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="PMathEpressions.hpp" />
+    <ClInclude Include="PMathBaseExpressions.hpp" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="PMathExpression.hpp" />
     <ClInclude Include="PMathFunction.hpp" />
     <ClInclude Include="PMathSystem.hpp" />
     <ClInclude Include="PMath.hpp" />
     <ClInclude Include="PMathException.hpp" />
+    <ClInclude Include="PMathTrigonometricExpressions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

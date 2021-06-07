@@ -1,6 +1,4 @@
 #pragma once
-#include "PMath.hpp"
-#include <cmath>
 
 namespace PMath
 {

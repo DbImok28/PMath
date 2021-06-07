@@ -18,12 +18,28 @@ int main()
     auto pow = Pow(numA, numB);
     auto multiply = Multiply(numA, numB);
 
-    MathSystem<float> ms({ { "x", devide },{ "y", sqr } });
+    PI<float> numPi;
+    auto var = Num(1.2f);//Devide(numPi, numA);
+    auto msin = Sin(var);
+    auto mcos = Cos(var);
+    auto mtg =  Tan(var);
+    auto mctg = Cot(var);
+    auto msec = Sec(var);
+    auto mcsc = Csc(var);
+
+    /*MathSystem<float> ms({ { "x", devide },{ "y", sqr } });
     std::cout << root.Calculate() << std::endl;
     std::cout << pow.Calculate() << std::endl;
     std::cout << multiply.Calculate() << std::endl;
     std::cout << sqr.Calculate() << std::endl;
-    std::cout << ms.Calculate("x") << std::endl;
+    std::cout << ms.Calculate("x") << std::endl;*/
+
+    std::cout << "sin - " << msin.Calculate() << std::endl;
+    std::cout << "cos - " << mcos.Calculate() << std::endl;
+    std::cout << "tg  - " << mtg.Calculate() << std::endl;
+    std::cout << "ctg - " << mctg.Calculate() << std::endl;
+    std::cout << "sec - " << msec.Calculate() << std::endl;
+    std::cout << "csc - " << mcsc.Calculate() << std::endl;
     try
     {
         std::cout << devide.Calculate() << std::endl;

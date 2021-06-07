@@ -22,10 +22,13 @@
     <ClInclude Include="PMathExpression.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PMathEpressions.hpp">
+    <ClInclude Include="PMathException.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PMathException.hpp">
+    <ClInclude Include="PMathBaseExpressions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PMathTrigonometricExpressions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
